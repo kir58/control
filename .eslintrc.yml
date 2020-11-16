@@ -1,0 +1,26 @@
+
+---
+
+extends:
+  - airbnb
+  - "plugin:jest/recommended"
+
+parser: babel-eslint
+
+env:
+  browser: true
+  node: true
+  jest: true
+
+settings:
+  import/resolver:
+    - node
+    - webpack
+
+rules:
+  import/extensions: 0
+  react/prop-types: 0
+  no-console: 0
+  "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }]
+  "import/prefer-default-export": off
+  "jsx-a11y/label-has-associated-control": off
